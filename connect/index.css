@@ -1,0 +1,316 @@
+html, body{
+    margin: 0;
+}
+
+.topBar{
+    position: sticky;
+    top: 0;
+    border: 1px black solid;
+    opacity: 0.95;
+    z-index: 1;
+}
+
+.AnitaMui{
+    padding: 12pt 0pt;
+    text-align: center;  
+    background-color: white;
+}
+
+.AnitaMui div{
+    display: inline-block;
+}
+
+.menuArrow{
+    position: fixed;
+    top: 20pt;
+    left: 10pt;
+    z-index: 1;
+    transition: 0.6s;
+    transition-timing-function: cubic-bezier(1,0,.32,1);
+}
+
+.menuArrow:hover .bar1,
+.menuArrow:hover .bar2,
+.menuArrow:hover .bar3{
+    cursor: pointer;
+    background-color: red;
+}
+
+.bar1{
+    width: 35pt;
+    height: 1pt;
+    background-color: black;
+    transition: 0.6s;
+}
+
+.bar2{
+    width: 17pt;
+    height: 1pt;
+    background-color: black;
+/*    transform: rotate(45deg) translate(2pt,5.3pt);*/
+    transform: rotate(45deg) translate(9.6pt,-19.6pt);
+    transition: 0.6s;
+}
+
+.bar3{
+    width: 17pt;
+    height: 1pt;
+    background-color: black;
+    transform: rotate(-45deg) translate(11.6pt,18pt);
+    transition: 0.6s;
+}
+
+#menu{
+    width: 100pt;
+    height: 110%;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1.2s;
+    background-color: white;
+    z-index: 0;
+}
+
+#menu div{
+    border-bottom:1px solid black;
+}
+
+#menu div a{
+    display: block;
+    text-align: center;
+    padding: 13.5pt;
+    transform: translateX(-100pt);
+}
+
+#menu div #menuBio{
+    transition: 0.8s;
+    transition-timing-function: cubic-bezier(.39,.01,0,1);
+}
+
+#menu div #menuMusic{
+    transition: 1s;
+    transition-timing-function: cubic-bezier(.39,.01,0,1);
+}
+
+#menu div #menuFilm{
+    transition: 1.2s;
+    transition-timing-function: cubic-bezier(.39,.01,0,1);
+}
+
+#menu div #menuLive{
+    transition: 1.4s;
+    transition-timing-function: cubic-bezier(.39,.01,0,1);
+}
+
+#menu div #menuInterview{
+    transition: 1.6s;
+    transition-timing-function: cubic-bezier(.39,.01,0,1);
+}
+
+#menu div #menuGallery{
+    transition: 1.8s;
+    transition-timing-function: cubic-bezier(.39,.01,0,1);
+}
+
+#menu div #menuGallery{
+    transition: 2s;
+    transition-timing-function: cubic-bezier(.39,.01,0,1);
+}
+
+#menu div #menuContribute{
+    transition: 2.2s;
+    transition-timing-function: cubic-bezier(.39,.01,0,1);
+}
+
+#menu div #menuConnect{
+    transition: 2.4s;
+    transition-timing-function: cubic-bezier(.39,.01,0,1);
+}
+
+/*
+.homeContentContainer{
+    position: relative;
+    top: 41pt;
+}
+*/
+
+.introImageContainer{
+    width:66.6666667%;
+}
+
+.introImage{
+    width: 100%;
+    display: block;
+}
+
+.introImageCaption{
+    border: 1px black solid;
+/*    border-right: 0px;*/
+    border-bottom: 0px;
+    padding: 8pt 10pt 10pt 10pt;
+}
+
+.introTextContainer{
+    width: 33.333333%;
+    display: inline-block;
+}
+
+.introText{
+/*    border-left: 1px black solid;*/
+    padding: 10pt;
+    font-size: 16pt;
+    font-family: sans-serif;
+/*    text-align: justify;*/
+}
+
+.introContainer{
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid black;
+    z-index: 0;
+}
+
+.homeMusicContainer,
+.homeGalleryContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeMusicHeader,
+.homeGalleryHeader{
+    width: 100%;
+    border: 1px black solid;
+    padding: 10pt;
+}
+
+.homeMusicTitle,
+.homeGalleryTitle{
+    width: 66.666667%;
+    display: inline-block;
+    font-size: 36pt;
+}
+
+.navArrow{
+    display: inline-block;
+    transform: translateY(-10pt) translateX(10pt);
+}
+
+.navArrowBar1{
+    width: 35pt;
+    height: 1pt;
+    background-color: black;
+}
+
+.navArrowBar2{
+    width: 17pt;
+    height: 1pt;
+    background-color: black;
+    transform: rotate(45deg) translate(8pt,-19pt);
+}
+
+.navArrowBar3{
+    width: 17pt;
+    height: 1pt;
+    background-color: black;
+    transform: rotate(-45deg) translate(10pt,17pt);
+}
+
+.homeMusicContentContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px black solid;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.homeGalleryContentContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px black solid;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+@keyframes slideshow{
+    from {
+        
+    }
+}
+
+.homeMusicContentContainer div{
+    width: 16.666667%;
+}
+
+.homeGalleryContentContainer div{
+    width: 16.666667%;
+}
+
+.homeMusicContentContainer div span{
+    display: inline-block;
+    padding: 10pt 0pt 10pt 10pt;
+    margin: 0;
+}
+
+.homeGalleryContentContainer div img{
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+.homeMusicContentContainer div span h4{
+    padding: 0;
+    margin: 0;
+}
+
+.homeMusicContentContainer div span span{
+    display: block;
+    padding: 0;
+    padding-left: 15pt !important;
+}
+
+.homeFooterContainer{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.homeFooterLinkContainer{
+    width:16.666667%;
+}
+
+.homeFooterLink{
+    display: inline-block;
+    padding: 10pt 0pt 10pt 10pt;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeMusicContentContainer div{
+        width: 50%;
+    }
+    .homeMusicContentContainer div span{
+        display: block;
+    }
+    .introImageContainer{
+        width: 100%;
+    }
+    .introTextContainer{
+        width: 100%;
+        border: 1px black solid;
+        border-bottom: 0px;
+    }
+    .introContainer{
+        border: 0px;
+    }
+    .homeGalleryContentContainer div{
+    width: 50%;
+    }
+    .homeFooterLinkContainer{
+    width:33%;
+    text-align: center;
+    }
+}
