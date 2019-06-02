@@ -124,6 +124,11 @@ html, body{
     transition-timing-function: cubic-bezier(.39,.01,0,1);
 }
 
+#menu div #menuConnect{
+    transition: 2.4s;
+    transition-timing-function: cubic-bezier(.39,.01,0,1);
+}
+
 /*
 .homeContentContainer{
     position: relative;
