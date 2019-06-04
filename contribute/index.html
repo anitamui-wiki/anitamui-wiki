@@ -3,59 +3,121 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact">
-    <link rel="stylesheet" href="style.css">
+    <link href="index.css" rel="stylesheet" >
+    <link href="../universal.css" rel="stylesheet">
+    <script src="../index.js" rel="javascript" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script data-cfasync="false" src="form-submission-handler.js"></script>
-    <script src="google-apps-script.js"></script>
-  <title>贡献</title>
+    <script src="google-apps-script.js" type="application/javascript"></script>
+    <title>梅艳芳 Anita Mui &#8226; Wiki 维基 &#8226; 贡献</title>
 </head>
 
 <body>
-  <h2 class="content-head">贡献</h2>
-
-  <form class="gform" method="POST" data-email="anitamui.wiki@gmail.com"
-  action="https://script.google.com/macros/s/AKfycbw9iWEHcQAYqM6m2PNoBH4N99dZ-xDh8UzxrGFtHji0kCnjBf5L/exec">
-    <div class="form-elements">
-        <fieldset class="pure-group">
-            <label for="message">Contribute to this wiki by suggesting edits in the description box below</label>
-            <textarea id="message" name="message" rows="10"
-            placeholder="Please enter your comment here"></textarea>
-        </fieldset>
-        
-        <fieldset class="pure-group">
-            <label for="name">Name:</label>
-            <input id="name" name="Name" placeholder="Please enter your name here"/>
-        </fieldset>
-        
-        <fieldset class="pure-group">
-            <label for="location">Location:</label>
-            <input id="location" name="Location" placeholder="Please enter your location here"/>
-        </fieldset>
-        
-        <fieldset class="pure-group">
-            <label for="age">Age</label>
-            <input id="age" name="Age" type="number" placeholder="Please enter your age here" />
-        </fieldset>
-        
-        <fieldset class="pure-group">
-            <label for="email">Email:</label>
-            <input id="email" name="Email" type="email" placeholder="Please enter your email here" required/>
-        </fieldset>
-
-        <fieldset class="pure-group honeypot-field">
-            <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-            <input id="honeypot" type="text" name="honeypot" value="" />
-        </fieldset>
-
-      <button class="button-success pure-button button-xlarge">Submit</button>
+    
+    <div class="topBar">
+        <div class="AnitaMui">
+            <a class="wiki" href="../index.html">梅艳芳 Anita Mui &#8226; Wiki 维基</a>  
+            <a class="edit" href="../contribute/index.html">&#9998;</a>
+            <span>贡献</span>
+        </div>
     </div>
-
-    <div class="thankyou_message" style="display:none;">
-      <h2><em>Thanks</em> for contacting us!
-        We will get back to you soon!</h2>
+        
+    <div id="menuArrow" class="menuArrow">
+                <div id="bar1" class="bar1"></div>
+                <div id="bar2" class="bar2"></div>
+<!--
+                <div id="bar2" class="bar2"></div>
+                <div id="bar2" class="bar2"></div>
+                <div id="bar2" class="bar2"></div>
+-->
+                <div id="bar3" class="bar3"></div>
+            </div>
+        
+    <div id="menu" class="menu">
+        <div id="space"><a>&nbsp;</a></div>
+        <div><a id="menuBio" href="../bio/index.html">生涯</a></div>
+        <div><a id="menuMusic" href="../music/index.html">音乐</a></div>
+        <div><a id="menuFilm" href="../film/index.html">影视</a></div>
+        <div><a id="menuLive" href="../live/index.html">现场</a></div>
+        <div><a id="menuInterview" href="../interview/index.html">访谈</a></div>
+        <div><a id="menuGallery" href="../gallery/index.html">照片</a></div>
     </div>
+    
+    <div class="formContainer">
+<!--
+        <div class="header">
+            <span>贡献</span>
+        </div>
+-->
 
-  </form>
+        <div class="formDescript">
+             <span>请在下方提出对此维基的建议</span>
+        </div>
+
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="anitamui.wiki@gmail.com"
+        action="https://script.google.com/macros/s/AKfycbw9iWEHcQAYqM6m2PNoBH4N99dZ-xDh8UzxrGFtHji0kCnjBf5L/exec">
+            <div class="form-elements">
+            <fieldset class="messageBox">
+                <textarea id="message" name="Message" placeholder="请输入" required oninvalid="this.setCustomValidity('请在此处提出对此维基的建议')"></textarea>
+            </fieldset>
+
+            <div class="SubmitInfoContainer">
+                <div class="email">
+                    <fieldset>
+                        <input id="email" name="Email" type="email" placeholder="邮箱" required/>
+                    </fieldset>
+                </div>
+
+                <div class="name">
+                    <fieldset>
+                        <input id="name" name="Name" placeholder="名字"/>
+                    </fieldset>
+                </div>
+
+                <div class="location">
+                    <fieldset>
+                        <input id="location" name="Location" placeholder="位置"/>
+                    </fieldset>
+                </div>
+
+                <div class="age">
+                    <fieldset>
+                        <input id="age" name="Age" type="number" placeholder="年龄" />
+                    </fieldset>
+                </div>
+            </div>
+
+            <fieldset class="honeypot-field">
+                    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                    <input id="honeypot" type="text" name="honeypot" value="" />
+            </fieldset>
+
+            <button>提交</button>
+            </div>
+
+            <div class="thankyou_message" style="display:none;">
+                <h2>谢谢</h2>
+            </div>
+        </form>
+    </div>
+    
+    
 </body>
+    
+<script>
+        $('#menuArrow').click (function() {
+            if ($('#menu').css('opacity') == 0) {
+                $('#menu').css({"opacity":"0.95", "visibility":"visible"});
+                $('#invisible').css({"opacity":"0", "visibility":"hidden"});
+                $('#menu div a').css({"transform":"translateX(0pt)"});
+                $('#menuArrow').css({"transform":"translateX(20pt) rotate(180deg)"});
+            }
+            else{
+                $('#menu').css({"opacity":"0", "visibility":"hidden"});
+                $('#menu div a').css({"transform":"translateX(-100pt)"});
+                $('#menuArrow').css({"transform":"translateX(0pt) rotate(0)"});            
+            }
+        });
+    </script>
     
 </html>

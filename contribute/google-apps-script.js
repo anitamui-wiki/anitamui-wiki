@@ -5,7 +5,7 @@
  ******************************************************************************/
 
 // if you want to store your email server-side (hidden), uncomment the next line
- var TO_ADDRESS = "anitamui.wiki@gmail.com";
+// var TO_ADDRESS = "example@email.net";
 
 // spit out all the keys/values from the form in HTML for email
 // uses an array of keys if provided or the object to determine field order

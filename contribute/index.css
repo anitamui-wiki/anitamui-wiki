@@ -1,0 +1,113 @@
+.AnitaMui span{
+    position: fixed;
+    top: 16.5pt;
+    right: 10pt;
+}
+
+.formContainer{
+    position: relative;
+    top: 45pt;
+}
+
+/*
+.header {
+    border: 1px solid black;
+    border-top: 0;
+    padding: 5pt;
+    font-size: 48pt;
+}
+*/
+
+.formDescript{
+    border:1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 5pt;
+    font-size: 48pt;
+    text-align: center;
+}
+
+.SubmitInfoContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SubmitInfoContainer div{
+    width: 25%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.SubmitInfoContainer div fieldset{
+    border: 1px solid black;
+    border-top: 0;
+    border-right: 0;
+    padding: 5pt;
+    margin: 0;
+}
+
+.age fieldset{
+    border-right: 1px solid black !important;
+}
+
+.SubmitInfoContainer div fieldset input{
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 15pt;
+    font-family: serif;
+}
+
+.SubmitInfoContainer div fieldset input::placeholder{
+    color:grey;
+}
+
+.messageBox{
+    display: block;
+    border: 1px solid black;
+    padding: 5pt;
+    margin: 0;
+}
+
+.messageBox textarea {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    resize: none;
+    font-size: 15pt;
+    font-family: serif;
+}
+
+.messageBox textarea::placeholder {
+    color: grey;
+}
+
+input:focus,
+textarea:focus{
+    outline-width: 0;
+}
+
+.honeypot-field {
+  display: none;
+}
+
+button{
+    font-size: 16pt;
+    width: 100%;
+    padding: 15pt;
+    background-color: transparent;
+    border: 1px solid black;
+    border-top: 0;
+    transition: 0.5s;
+    font-family: serif;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}

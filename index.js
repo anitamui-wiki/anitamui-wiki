@@ -1,5 +1,5 @@
 $(document).ready(function () {
-          $('#menuArrow').click (function() {
+        $('#menuArrow').click (function() {
             if ($('#menu').css('opacity') == 0) {
                 $('#menu').css({"opacity":"0.95", "visibility":"visible"});
                 $('#invisible').css({"opacity":"0", "visibility":"hidden"});
@@ -13,3 +13,20 @@ $(document).ready(function () {
             }
         });
 });
+
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+function togglePlay() {
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
+};
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};

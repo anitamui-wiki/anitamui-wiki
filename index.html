@@ -3,41 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Anita Mui Wiki</title>
         <link href="index.css" type="text/css" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="universal.css" type="text/css" rel="stylesheet">
         <script src="index.js" rel="javascript" type="text/javascript"></script>
-        <script
-          src="https://code.jquery.com/jquery-3.4.1.min.js"
-          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-          crossorigin="anonymous">
-        </script>
-        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <title>梅艳芳 Anita Mui &#8226; Wiki 维基</title>
     </head>
     
     <body>
         <div class="topBar">
             <div class="AnitaMui">
-                <div>梅艳芳</div> <sup>？</sup>
+                <a class="wiki" href="">梅艳芳 Anita Mui &#8226; Wiki 维基</a>  
+                <a class="edit" href="contribute/index.html">&#9998;</a>
             </div>
         </div>
         
         <div id="menuArrow" class="menuArrow">
                 <div id="bar1" class="bar1"></div>
                 <div id="bar2" class="bar2"></div>
+<!--
+                <div id="bar2" class="bar2"></div>
+                <div id="bar2" class="bar2"></div>
+                <div id="bar2" class="bar2"></div>
+-->
                 <div id="bar3" class="bar3"></div>
             </div>
         
         <div id="menu" class="menu">
-            <div><a id="space">&nbsp;</a></div>
-            <div><a id="menuBio">简介</a></div>
-            <div><a id="menuMusic">音乐作品</a></div>
-            <div><a id="menuFilm">影视作品</a></div>
-            <div><a id="menuLive">演唱会</a></div>
-            <div><a id="menuInterview">访谈录</a></div>
-            <div><a id="menuGallery">相册</a></div>
-            <div><a id="menuContribute">贡献</a></div>
+            <div id="space"><a>&nbsp;</a></div>
+            <div><a id="menuBio" href="bio/index.html">生涯</a></div>
+            <div><a id="menuMusic" href="music/index.html">音乐</a></div>
+            <div><a id="menuFilm" href="film/index.html">影视</a></div>
+            <div><a id="menuLive" href="live/index.html">现场</a></div>
+            <div><a id="menuInterview" href="interview/index.html">访谈</a></div>
+            <div><a id="menuGallery" href="gallery/index.html">照片</a></div>
         </div>
         
         <div class="homeContentContainer">
@@ -54,17 +57,19 @@
                 </div> 
             </div>
 
-            <div class="homeMusicContainer">
-                <div class="homeMusicHeader">
-                    <div class="homeMusicTitle">音乐专辑</div>
+            <div id="music" class="homeMFLIContainer">
+                <div class="homeMFLIHeader" style="border-top: 1px solid black !important;">
+                    <div class="homeMFLITitle">音乐</div>
                     <div class="navArrow">
-                        <div class="navArrowBar1"></div>
-                        <div class="navArrowBar2"></div>
-                        <div class="navArrowBar3"></div>
+                        <a href="music/index.html">
+                            <div class="navArrowBar1"></div>
+                            <div class="navArrowBar2"></div>
+                            <div class="navArrowBar3"></div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="homeMusicContentContainer">
+                <div class="homeMFLIContentContainer">
                     <div>
                         <span>
                             <h4>2004<br>永远的梅艳芳</h4>
@@ -174,139 +179,406 @@
                             <span>飘零</span>
                             <span>东西</span>
                             <span>空城</span>
-                            <span>&nbsp;</span>
-                            <span>&nbsp;</span>
-                            <span>更多</span>
+                            <h4>1998<br>变奏</h4>
+                            <span>你留我在此</span>
                         </span>
                     </div>
                     
-                    <div id="homeMusicHide1">
+                    <div id="hide">
                         <span>
-                            <h4>1999<br>Larger Than Life</h4>
-                            <span>不快不吐</span>
-                            <span>艳舞台</span>
-                            <span>电话谋杀案</span>
-                            <span>同窗会</span>
-                            <span>女人烦</span>
-                            <span>反翻版</span>
-                            <span>无名氏</span>
-                            <span>想不起来</span>
-                            <span>悠然自得</span>
-                            <span>比生命更大</span>
-                            <span>&nbsp;</span>
-                            <span>&nbsp;</span>
-                            <span>更多</span>
+                            <span>怀旧</span>
+                            <span>相思河畔</span>
+                            <span>东山飘雨西山晴</span>
+                            <span>槟城艳</span>
+                            <span>一水隔天涯 / 变</span>
+                            <span>梭罗河之恋</span>
+                            <span>今天我非常寂寞</span>
+                            <span>榴梿飘香</span>
+                            <span>她比烟花寂寞</span>
+                            <h4>1997<br>女人花</h4>
+                            <span>女人花</span>
+                            <span>一生爱你千百回</span>
+                            <span>月光（上弦月版）</span>
                         </span>
                     </div>
                     
-                    <div id="homeMusicHide2">
+                    <div id="hide2">
                         <span>
-                            <h4>1999<br>Larger Than Life</h4>
-                            <span>不快不吐</span>
-                            <span>艳舞台</span>
-                            <span>电话谋杀案</span>
-                            <span>同窗会</span>
-                            <span>女人烦</span>
-                            <span>反翻版</span>
-                            <span>无名氏</span>
-                            <span>想不起来</span>
-                            <span>悠然自得</span>
-                            <span>比生命更大</span>
-                            <span>&nbsp;</span>
-                            <span>&nbsp;</span>
-                            <span>更多</span>
+                            <span>到明天再做好女人</span>
+                            <span>上火</span>
+                            <span>我是多么值得爱</span>
+                            <span>相爱</span>
+                            <span>受不了没有爱情</span>
+                            <span>愈爱愈无求</span>
+                            <span>月光（下弦月版）</span>
+                            <h4>1997<br>镜花水月</h4>
+                            <span>火凤凰之舞</span>
+                            <span>镜花水月</span>
+                            <span>为什么是你</span>
+                            <span>什么都有的女人?</span>
+                            <span>夜蛇</span>
                         </span>
                     </div>
                     
-                    <div id="homeMusicHide3">
+                    <div id="hide3">
                         <span>
-                            <h4>1999<br>Larger Than Life</h4>
-                            <span>不快不吐</span>
-                            <span>艳舞台</span>
-                            <span>电话谋杀案</span>
-                            <span>同窗会</span>
-                            <span>女人烦</span>
-                            <span>反翻版</span>
-                            <span>无名氏</span>
-                            <span>想不起来</span>
-                            <span>悠然自得</span>
-                            <span>比生命更大</span>
-                            <span>&nbsp;</span>
-                            <span>&nbsp;</span>
-                            <span>更多</span>
+                            <span>第六个星期</span>
+                            <span>有心人</span>
+                            <span>抱紧眼前人</span>
+                            <span>镜花水月（Reprise）</span>
+                            <span>Goodnight</span>
+                            <h4>1995<br>歌之女</h4>
+                            <span>Overture</span>
+                            <span>爱我的只有我</span>
+                            <span>爱是没余地</span>
+                            <span>Big Bad Girl</span>
+                            <span>相逢一笑</span>
+                            <span>明天当我想起你</span>
+                            <span>心全蚀</span>
+                            <span>爱情甜蜜债</span>
                         </span>
                     </div>
                     
-                    <div id="homeMusicHide4">
+                    <div id="hide4">
                         <span>
-                            <h4>1999<br>Larger Than Life</h4>
-                            <span>不快不吐</span>
-                            <span>艳舞台</span>
-                            <span>电话谋杀案</span>
-                            <span>同窗会</span>
-                            <span>女人烦</span>
-                            <span>反翻版</span>
-                            <span>无名氏</span>
-                            <span>想不起来</span>
-                            <span>悠然自得</span>
-                            <span>比生命更大</span>
-                            <span>&nbsp;</span>
-                            <span>&nbsp;</span>
-                            <span>更多</span>
+                            <span>得不到怎么好</span>
+                            <span>歌之女</span>
+                            <h4>1994<br>小心</h4>
+                            <span>落叶不归根</span>
+                            <span>只羡鸳鸯不羡仙</span>
+                            <span>醉矇眬</span>
+                            <span>情归何处</span>
+                            <span>再陪你一晚</span>
+                            <span>放开你的头脑</span>
+                            <span>大家都要快乐</span>
+                            <span>天使爱魔鬼</span>
+                            <span>蝶舞</span>
+                            <span>小心</span>
                         </span>
                     </div>
                     
-                    <div id="homeMusicHide5">
+                    <div id="hide5">
                         <span>
-                            <h4>1999<br>Larger Than Life</h4>
-                            <span>不快不吐</span>
-                            <span>艳舞台</span>
-                            <span>电话谋杀案</span>
-                            <span>同窗会</span>
-                            <span>女人烦</span>
-                            <span>反翻版</span>
-                            <span>无名氏</span>
-                            <span>想不起来</span>
-                            <span>悠然自得</span>
-                            <span>比生命更大</span>
-                            <span>&nbsp;</span>
-                            <span>&nbsp;</span>
+                            <h4>1994<br>是这样的</h4>
                             <span>更多</span>
+                            <span>情归何处</span>
+                            <span>感激</span>
+                            <span>请你快回来</span>
+                            <span>爱是个传奇</span>
+                            <span>悲情城市</span>
+                            <span>如夜</span>
+                            <span>蝶舞</span>
+                            <span>爱情来了报佳音</span>
+                            <span>是这样的</span>
+                            <span>朦胧夜雨里</span>
                         </span>
                     </div>
                     
-                    <div id="homeMusicHide6">
+                    <div id="hide6">
                         <span>
-                            <h4>1999<br>Larger Than Life</h4>
-                            <span>不快不吐</span>
-                            <span>艳舞台</span>
-                            <span>电话谋杀案</span>
-                            <span>同窗会</span>
-                            <span>女人烦</span>
-                            <span>反翻版</span>
-                            <span>无名氏</span>
-                            <span>想不起来</span>
-                            <span>悠然自得</span>
-                            <span>比生命更大</span>
-                            <span>&nbsp;</span>
-                            <span>&nbsp;</span>
-                            <span>更多</span>
+                            <h4>1992<br>The Legend of the Pop Queen, Part 1</h4>
+                            <span>Touch</span>
+                            <span>我最爱自己</span>
+                            <span>回头已是百年身</span>
+                            <span>烈女</span>
+                            <span>四海一心</span>
+                            <span>逝去的爱</span>
+                            <span>绯闻中的女人</span>
+                            <span>梦幻的拥抱</span>
+                            <span>赤的疑惑</span>
+                            <span>心仍是冷</span>
+                            <h4>Part 2</h4>
+                            <span>欲望野兽街</span>
                         </span>
                     </div>
+                    
+                    <div id="hide7">
+                        <span>
+                            <span>坏女孩摇滚坏到透版本</span>
+                            <span>烈焰黑豹天昏地暗版</span>
+                            <span>教父的女人卡邦 Mix</span>
+                            <span>路...始终告一段</span>
+                            <span>何日</span>
+                            <span>是这样的</span>
+                            <span>秋天复秋天</span>
+                            <span>似是故人来</span>
+                            <h4>1991<br>梅艳芳 / 欲望野兽街</h4>
+                            <span>欲望野兽街</span>
+                            <span>梦姬</span>
+                            <span>几多</span>
+                            <span>真我人</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide8">
+                        <span>
+                            <span>夜猫夫人</span>
+                            <span>教父的女人</span>
+                            <span>Faithfully</span>
+                            <span>噼啪碰</span>
+                            <span>爱杀</span>
+                            <span>随缘寻伴侣</span>
+                            <h4>1991<br>亲密爱人</h4>
+                            <span>Baby Don't Go</span>
+                            <span>For Dear Love</span>
+                            <span>亲密爱人</span>
+                            <span>找爱的人</span>
+                            <span>珍爱真爱</span>
+                            <span>难怪忧伤</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide9">
+                        <span>
+                            <span>Rhythm</span>
+                            <span>Mini 猫</span>
+                            <span>一舞倾心</span>
+                            <span>很难再说</span>
+                            <span>心仍是冷 I</span>
+                            <span>心仍是冷 II</span>
+                            <span>亲密爱人（钢琴）</span>
+                            <h4>1990<br>封面女郎</h4>
+                            <span>爱情基本法</span>
+                            <span>封面女郎</span>
+                            <span>心仍是冷</span>
+                            <span>笑看风云变</span>
+                            <span>耶利亚</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide10">
+                        <span>
+                            <span>心窝已疯</span>
+                            <span>凭什么</span>
+                            <span>意乱情迷</span>
+                            <span>Anita</span>
+                            <span>心仍是冷</span>
+                            <h4>1989<br>In Brasil</h4>
+                            <span>夏日恋人</span>
+                            <span>愿今宵一起醉死</span>
+                            <span>火红色人生</span>
+                            <span>天生一对</span>
+                            <span>我未失方向</span>
+                            <span>爱我便说爱我吧</span>
+                            <span>夕阳之歌</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide11">
+                        <span>
+                            <span>失落嘉年华</span>
+                            <span>消失的脚印</span>
+                            <span>各走各路</span>
+                            <span>第四十夜</span>
+                            <h4>1989<br>淑女</h4>
+                            <span>淑女</span>
+                            <span>傲慢</span>
+                            <span>几多个几多</span>
+                            <span>转走旧时梦</span>
+                            <span>朝朝暮暮</span>
+                            <span>黑夜的豹</span>
+                            <span>曾被我拥有</span>
+                            <span>恋爱Part-Time</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide12">
+                        <span>
+                            <span>一舞倾情</span>
+                            <span>今夜只因你</span>
+                            <h4>1988<br>百变梅艳芳之烈焰红唇</h4>
+                            <span>胭脂扣</span>
+                            <span>两个爱</span>
+                            <span>何必在意</span>
+                            <span>走上寂寞路</span>
+                            <span>似水流年</span>
+                            <span>烈焰红唇</span>
+                            <span>独饮夜色</span>
+                            <span>冷漠的理由</span>
+                            <span>小楼风雨</span>
+                            <span>冬眠的爱情</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide13">
+                        <span>
+                            <h4>1988<br>梦里共醉</h4>
+                            <span>梦里共醉</span>
+                            <span>Stand By Me</span>
+                            <span>爱你、想你</span>
+                            <span>无人愿爱我</span>
+                            <span>豪门怨</span>
+                            <span>不如不见</span>
+                            <span>We'll Be Together</span>
+                            <span>心肝宝贝</span>
+                            <span>热溶你与我</span>
+                            <span>玫瑰、玫瑰、我爱你</span>
+                            <span>富贵浮云</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide14">
+                        <span>
+                            <h4>1987<br>梅艳芳 / 烈焰红唇</h4>
+                            <span>烈焰红唇</span>
+                            <span>伤心教堂</span>
+                            <span>她的前半生</span>
+                            <span>魅力在天桥</span>
+                            <span>孤单</span>
+                            <span>暂停厌倦</span>
+                            <span>回复真我</span>
+                            <span>假如我是男人</span>
+                            <span>我肯</span>
+                            <span>胭脂扣</span>
+                            <span>最后一次</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide15">
+                        <span>
+                            <h4>1986<br>蔓珠莎华</h4>
+                            <span>梦伴</span>
+                            <span>蔓珠莎华</span>
+                            <span>坏女孩</span>
+                            <span>歌衫泪影</span>
+                            <span>不了情</span>
+                            <span>人在风里</span>
+                            <span>一千个夜晚</span>
+                            <span>孤身走我路</span>
+                            <span>唤回快乐的我</span>
+                            <span>冰山大火</span>
+                            <span>爱没有罪</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide16">
+                        <span>
+                            <span>梦伴</span>
+                            <h4>1986<br>梅艳芳 / 妖女</h4>
+                            <span>妖女</span>
+                            <span>来来星屑港</span>
+                            <span>痴痴爱一次</span>
+                            <span>Crazy Love</span>
+                            <span>征服他</span>
+                            <span>将冰山劈开</span>
+                            <span>爱将</span>
+                            <span>绯闻中的女人</span>
+                            <span>某一天</span>
+                            <span>唯一伴侣</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide17">
+                        <span>
+                            <h4>1986<br>坏女孩</h4>
+                            <span>坏女孩</span>
+                            <span>梦伴</span>
+                            <span>不了情</span>
+                            <span>抱你十个世纪</span>
+                            <span>魅力的散发</span>
+                            <span>俩心未变</span>
+                            <span>冰山大火</span>
+                            <span>癫多一千晚</span>
+                            <span>唤回快乐的我</span>
+                            <span>点都要爱</span>
+                            <span>孤身走我路</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide18">
+                        <span>
+                            <h4>1985<br>梅艳芳 / 似水流年</h4>
+                            <span>梦幻的拥抱</span>
+                            <span>蔓珠莎华</span>
+                            <span>似水流年</span>
+                            <span>人在风里</span>
+                            <span>问一问你</span>
+                            <span>歌衫泪影</span>
+                            <span>纱笼女郎</span>
+                            <span>一点相思</span>
+                            <span>旧欢如梦</span>
+                            <span>觅爱重重</span>
+                            <span>多少柔情</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide19">
+                        <span>
+                            <h4>1984<br>飞越舞台</h4>
+                            <span>留住你今晚</span>
+                            <span>飞跃舞台</span>
+                            <span>寂寞的心</span>
+                            <span>独爱荆途</span>
+                            <span>不信爱有罪</span>
+                            <span>他令我改变</span>
+                            <span>逝去的爱</span>
+                            <span>不许再回头</span>
+                            <span>莫逃避</span>
+                            <span>发电一千Volt</span>
+                            <span>点起你欲望</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide20">
+                        <span>
+                            <span>今晚记住我</span>
+                            <h4>1983<br>赤色梅艳芳</h4>
+                            <span>赤的疑惑</span>
+                            <span>迎风上路</span>
+                            <span>珍珠指环的约誓</span>
+                            <span>再共舞</span>
+                            <span>不必想昨天</span>
+                            <span>赤的冲击</span>
+                            <span>交出我的心</span>
+                            <span>残月碎春风</span>
+                            <span>一个字</span>
+                            <span>相逢未晚</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide21">
+                        <span>
+                            <span>传说</span>
+                            <span>千年女王</span>
+                            <h4>1982<br>心债, A面</h4>
+                            <span>心债</span>
+                            <span>情爱火花</span>
+                            <span>一生为你痴</span>
+                            <span>日夜怀念我</span>
+                            <span>莫问起</span>
+                            <span>不必想我</span>
+                            <h4>B面</h4>
+                            <span>问你</span>
+                            <span>伴星行</span>
+                        </span>
+                    </div>
+                    
+                    <div id="hide22">
+                        <span>
+                            <span>流萤</span>
+                            <span>心内语</span>
+                            <span>始终怕讲</span>
+                            <span>过河田鸡</span>
+                        </span>
+                    </div>
+                    
+                    <div id="more">更多</div>
                 </div> 
             </div>
 
-            <div class="homeMusicContainer">
-                <div class="homeMusicHeader">
-                    <div class="homeMusicTitle">影视作品</div>
+            <div id="film" class="homeMFLIContainer">
+                <div class="homeMFLIHeader">
+                    <div class="homeMFLITitle">影视</div>
                     <div class="navArrow">
-                        <div class="navArrowBar1"></div>
-                        <div class="navArrowBar2"></div>
-                        <div class="navArrowBar3"></div>
+                        <a href="film/index.html">
+                            <div class="navArrowBar1"></div>
+                            <div class="navArrowBar2"></div>
+                            <div class="navArrowBar3"></div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="homeMusicContentContainer">
+                <div class="homeMFLIContentContainer">
                     <div>
                         <span>
                             <h4>2002</h4>
@@ -413,17 +685,19 @@
                 </div> 
             </div>
 
-            <div class="homeMusicContainer">
-                <div class="homeMusicHeader">
-                    <div class="homeMusicTitle">现场表演</div>
+            <div id="live" class="homeMFLIContainer">
+                <div class="homeMFLIHeader">
+                    <div class="homeMFLITitle">现场</div>
                     <div class="navArrow">
-                        <div class="navArrowBar1"></div>
-                        <div class="navArrowBar2"></div>
-                        <div class="navArrowBar3"></div>
+                        <a href="live/index.html">
+                            <div class="navArrowBar1"></div>
+                            <div class="navArrowBar2"></div>
+                            <div class="navArrowBar3"></div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="homeMusicContentContainer">
+                <div class="homeMFLIContentContainer">
                     <div>
                         <span>
                             <h4>2003</h4>
@@ -485,38 +759,24 @@
                 </div> 
             </div>
 
-            <div class="homeMusicContainer">
-                <div class="homeMusicHeader">
-                    <div class="homeMusicTitle">采访录</div>
+            <div id="interview" class="homeMFLIContainer">
+                <div class="homeMFLIHeader">
+                    <div class="homeMFLITitle">采访</div>
                     <div class="navArrow">
-                        <div class="navArrowBar1"></div>
-                        <div class="navArrowBar2"></div>
-                        <div class="navArrowBar3"></div>
+                        <a href="interview/index.html">
+                            <div class="navArrowBar1"></div>
+                            <div class="navArrowBar2"></div>
+                            <div class="navArrowBar3"></div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="homeMusicContentContainer">
-                    <div>
+                <div class="homeMFLIContentContainer">
+                    <div class="interviewContent">
                         <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid</span>
                     </div>
 
-                    <div>
-                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid</span>
-                    </div>
-
-                    <div>
-                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid</span>
-                    </div>
-
-                    <div>
-                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid</span>
-                    </div>
-
-                    <div>
-                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid</span>
-                    </div>
-
-                    <div>
+                    <div class="interviewContent">
                         <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid</span>
                     </div>
                 </div> 
@@ -526,48 +786,82 @@
                 <div class="homeGalleryHeader">
                     <div class="homeGalleryTitle">相册</div>
                     <div class="navArrow">
-                        <div class="navArrowBar1"></div>
-                        <div class="navArrowBar2"></div>
-                        <div class="navArrowBar3"></div>
+                        <a href="gallery/index.html">
+                            <div class="navArrowBar1"></div>
+                            <div class="navArrowBar2"></div>
+                            <div class="navArrowBar3"></div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="homeGalleryContentContainer">
-                    <div>
-                        <img src="images/amWEDDINGDRESS.jpg">
+                    <div id="slide1" class="carousel slide" data-ride="carousel" data-interval="2000">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">   
+                            <img class="d-block w-100" src="images/music/85ssln.jpeg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/music/88mlgz4.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/01BSY.jpg" alt="Third slide">
+                        </div>
+                      </div>
                     </div>
-
-                    <div>
-                        <img src="images/amWEDDINGDRESS.jpg">
+                    
+                    <div id="slide2" class="carousel slide" data-ride="carousel" data-interval="2000">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="images/music/87lyhc.jpeg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/00YFYM.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/amJULYRHAPSODY.jpg" alt="Third slide">
+                        </div>
+                      </div>
                     </div>
-
-                    <div>
-                        <img src="images/amWEDDINGDRESS.jpg">
+                    
+                    <div id="slide3" class="carousel slide" data-ride="carousel" data-interval="2000">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="images/music/89inbrasil.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/music/02WITH.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/music/99LARGERr.png" alt="Third slide">
+                        </div>
+                      </div>
                     </div>
-
-                    <div>
-                        <img src="images/amWEDDINGDRESS.jpg">
-                    </div>
-
-                    <div>
-                        <img src="images/amWEDDINGDRESS.jpg">
-                    </div>
-
-                    <div>
-                        <img src="images/amWEDDINGDRESS.jpg">
+                    
+                    <div id="slide4" class="carousel slide" data-ride="carousel" data-interval="2000">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="images/music/83csmyf.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/music/84fywt2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/music/98CQMYG.jpg" alt="Third slide">
+                        </div>
+                      </div>
                     </div>
                 </div> 
             </div>
 
             <div class="homeFooterContainer">
                 <div class="homeFooterLinkContainer">
-                    <div class="homeFooterLink">About the site</div>
+                    <div class="homeFooterLink">关于</div>
                 </div>
                 <div class="homeFooterLinkContainer">
-                    <div class="homeFooterLink">Resources</div>
+                    <div class="homeFooterLink">资源</div>
                 </div>
                 <div class="homeFooterLinkContainer">
-                    <div class="homeFooterLink">Contact</div>
+                    <div class="homeFooterLink">联系</div>
                 </div>
             </div>
         </div>
@@ -586,6 +880,102 @@
                 $('#menu').css({"opacity":"0", "visibility":"hidden"});
                 $('#menu div a').css({"transform":"translateX(-100pt)"});
                 $('#menuArrow').css({"transform":"translateX(0pt) rotate(0)"});            
+            }
+        });
+        
+        $('#more').click (function() {
+            $("#more").text("更少");
+            
+            if ($('#hide').css('opacity') == 0) {
+                $('#hide').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide2').css('opacity') == 0) {
+                $('#hide2').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide3').css('opacity') == 0) {
+                $('#hide3').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide4').css('opacity') == 0) {
+                $('#hide4').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide5').css('opacity') == 0) {
+                $('#hide5').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide6').css('opacity') == 0) {
+                $('#hide6').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide7').css('opacity') == 0) {
+                $('#hide7').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide8').css('opacity') == 0) {
+                $('#hide8').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide9').css('opacity') == 0) {
+                $('#hide9').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide10').css('opacity') == 0) {
+                $('#hide10').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide11').css('opacity') == 0) {
+                $('#hide11').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide12').css('opacity') == 0) {
+                $('#hide12').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide13').css('opacity') == 0) {
+                $('#hide13').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide14').css('opacity') == 0) {
+                $('#hide14').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide15').css('opacity') == 0) {
+                $('#hide15').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide16').css('opacity') == 0) {
+                $('#hide16').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide17').css('opacity') == 0) {
+                $('#hide17').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide18').css('opacity') == 0) {
+                $('#hide18').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide19').css('opacity') == 0) {
+                $('#hide19').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide20').css('opacity') == 0) {
+                $('#hide20').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide21').css('opacity') == 0) {
+                $('#hide21').css({"opacity":"1", "display":"block"});
+            }
+            if ($('#hide22').css('opacity') == 0) {
+                $('#hide22').css({"opacity":"1", "display":"block"});
+            }
+            else{
+                $("#more").text("更多");
+                $('#hide').css({"opacity":"0", "display":"none"});
+                $('#hide2').css({"opacity":"0", "display":"none"});
+                $('#hide3').css({"opacity":"0", "display":"none"});
+                $('#hide4').css({"opacity":"0", "display":"none"});
+                $('#hide5').css({"opacity":"0", "display":"none"});
+                $('#hide6').css({"opacity":"0", "display":"none"});
+                $('#hide7').css({"opacity":"0", "display":"none"});
+                $('#hide8').css({"opacity":"0", "display":"none"});
+                $('#hide9').css({"opacity":"0", "display":"none"});
+                $('#hide10').css({"opacity":"0", "display":"none"});
+                $('#hide11').css({"opacity":"0", "display":"none"});
+                $('#hide12').css({"opacity":"0", "display":"none"});
+                $('#hide13').css({"opacity":"0", "display":"none"});
+                $('#hide14').css({"opacity":"0", "display":"none"});
+                $('#hide15').css({"opacity":"0", "display":"none"});
+                $('#hide16').css({"opacity":"0", "display":"none"});
+                $('#hide17').css({"opacity":"0", "display":"none"});
+                $('#hide18').css({"opacity":"0", "display":"none"});
+                $('#hide19').css({"opacity":"0", "display":"none"});
+                $('#hide20').css({"opacity":"0", "display":"none"});
+                $('#hide21').css({"opacity":"0", "display":"none"});
+                $('#hide22').css({"opacity":"0", "display":"none"});
             }
         });
     </script>
