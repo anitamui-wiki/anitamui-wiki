@@ -29,7 +29,6 @@
     padding: 10pt;
     font-size: 16pt;
     font-family: sans-serif;
-/*    text-align: justify;*/
 }
 
 .introContainer{
@@ -99,6 +98,10 @@
     border-top: 0px;
 }
 
+.homeGalleryContentContainer{
+    border-bottom: 0px;
+}
+
 .homeMFLIContentContainer div{
     width: 16.666667%;
 }
@@ -150,23 +153,6 @@
     display: block;
     padding: 0;
     padding-left: 15pt !important;
-}
-
-.homeFooterContainer{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid black;
-    border-top: 0;
-}
-
-.homeFooterLinkContainer{
-    width:16.666667%;
-}
-
-.homeFooterLink{
-    display: inline-block;
-    padding: 10pt 0pt 10pt 10pt;
-    margin: 0;
 }
 
 #more{

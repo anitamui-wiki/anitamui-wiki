@@ -22,6 +22,7 @@ function formatMailBody(obj, order) {
     // for every key, concatenate an `<h4 />`/`<div />` pairing of the key name and its value, 
     // and append it to the `result` string created at the start.
   }
+  console.log('google-apps-script.js result: ' + result);
   return result; // once the looping is done, `result` will be one long string to put in the email body
 }
 

@@ -1,0 +1,170 @@
+.filmContainer{
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+.filmContentContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.mainContainer,
+.filmTitleContainer{
+    width: 50%;
+}
+
+.extraContainer,
+.filmInfoContainer,
+.emptyContainer,
+.filmYearContainer{
+    width: 25%;
+}
+
+.mainContainer,
+.extraContainer,
+.filmInfoContainer,
+.filmTitleContainer,
+.emptyContainer,
+.filmYearContainer,
+.filmHeaderContainer{
+    position: relative;
+    top: 84.5pt;
+}
+
+.filmHeaderContainer h1{
+    padding: 10pt;
+    font-size: 48pt;
+    margin: 0;
+    text-align: center;
+}
+
+.filmTitleContainer,
+.emptyContainer,
+.filmYearContainer{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.mainContainer img,
+.extraContainer img{
+    width: 100%;
+    display: block;
+    filter: blur(50px);
+    transition: 0.6s;
+}
+
+.mainContainer img:hover,
+.extraContainer img:hover{
+    filter: blur(0px);
+}
+
+.filmTitle{
+    font-size:48pt;
+    margin: 0;
+    font-weight: normal;
+    padding: 0pt 10pt;
+    line-height: 48pt;
+    padding-bottom: 5pt;
+}
+
+.filmTitleContainer div h2{
+    margin: 0;
+    padding: 10pt;  
+    font-size: 36pt;
+    font-weight: normal;
+}
+
+.filmYearContainer div h2{
+    margin: 0;
+    padding: 10pt;  
+    text-align: right;
+    font-size: 45pt;
+    font-weight: normal;
+}
+
+.filmInfoContainer{
+    padding:10pt 0;
+    display: flex;
+}
+
+.filmInfoContainer .filmInfo1{
+    width: 25%;
+}
+
+.filmInfoContainer .filmInfo2{
+    width: 75%;
+}
+
+.filmInfo1 div div{
+    margin: 0;
+    padding: 0 0 0 20pt;
+}
+
+.filmInfo1 div h4{
+    margin: 0;
+    padding: 0 10pt;  
+    font-weight: normal;
+}
+
+.filmInfo2 div div{
+    padding: 0 10pt;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeFooterLinkContainer{
+        width:33%;
+        text-align: center;
+    }
+    
+    .mainContainer img,
+    .extraContainer img{
+        filter: blur(0px);
+    }
+    
+    .mainContainer,
+    .extraContainer,
+    .filmInfoContainer,
+    .filmTitleContainer,
+    .emptyContainer,
+    .filmYearContainer{
+        position: relative;
+        top: 79pt;
+    }
+    
+    .extraContainer,
+    .emptyContainer{
+        display: none;
+    }
+    
+    .mainContainer,
+    .filmInfoContainer{
+        width: 100%;
+        top: 79pt;
+    }
+    
+    .filmInfoContainer{
+        padding-bottom: 10pt;
+        border-top: 0;
+    }
+
+    .filmTitleContainer{
+        width: 75%;
+    }
+    
+    .filmYearContainer{
+        width: 25%;
+    }
+    
+    .filmTitleContainer div h2{
+        font-size: 18pt;
+    }
+
+    .filmYearContainer div h2{
+        font-size: 18pt;
+    }
+    
+    .filmHeaderContainer h1{
+        padding: 0 10pt 10pt 10pt;
+    }
+}

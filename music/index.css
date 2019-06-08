@@ -1,44 +1,8 @@
-.AnitaMui span{
-    position: fixed;
-    top: 16.5pt;
-    right: 10pt;
-}
-
-.Year{
-    background-color: white;
-    border-top: 1px solid black;
-    width: 100%;
-    overflow: auto;
-    white-space: nowrap;
-}
-
-/*
-::-webkit-scrollbar {
-    display: none;
-  }
-*/
-
-.Year a{
-    padding: 5pt 2.5pt;
-    text-align: left;
-    font-size: 12pt;
-    color: black;
-    text-decoration: none;
-    transition: 0.6s;
-    transition-timing-function: cubic-bezier(1,0,.32,1);
-    display: inline-block;
-}
-
-.Year-first{
-    padding-left: 8pt !important;
-}
-
-.Year-last{
-    padding-right: 8pt !important;
-}
-
-.Year a:hover{
-    
+.filmHeaderContainer h1{
+    padding: 10pt;
+    font-size: 48pt;
+    margin: 0;
+    text-align: center;
 }
 
 .musicContainer{
@@ -56,6 +20,13 @@
 .albumContainer{
     width: 50%;
     position:relative;
+    top: 84.3pt;
+}
+
+.filmHeaderContainer{
+    width: 100%;
+    display: block;
+    position: relative;
     top: 84.3pt;
 }
 
@@ -89,7 +60,7 @@
     font-size:48pt;
     margin: 0;
     font-weight: normal;
-    padding: 0pt 10pt;
+    padding: 5pt 10pt;
     line-height: 48pt;
     padding-bottom: 5pt;
 }
@@ -107,22 +78,6 @@
 
 .albumListContainer div span{
     display: block;
-}
-
-.homeFooterContainer{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid black;
-}
-
-.homeFooterLinkContainer{
-    width:16.666667%;
-}
-
-.homeFooterLink{
-    display: inline-block;
-    padding: 10pt 0pt 10pt 10pt;
-    margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -156,5 +111,9 @@
     
     #containerLeft{
         order: 2;
+    }
+    
+    .filmHeaderContainer h1{
+        padding: 0 10pt 10pt 10pt;
     }
 }
