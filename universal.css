@@ -225,3 +225,11 @@ html, body{
     padding: 10pt 0pt 10pt 10pt;
     margin: 0;
 }
+
+.last{
+    padding-bottom: 90pt;
+}
+
+.lastM{
+    margin-bottom: 90pt;
+}

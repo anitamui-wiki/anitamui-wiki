@@ -1,0 +1,112 @@
+.galleryContainer{
+    position: relative;
+    margin-top: 46.5pt;
+}
+/*
+
+.carousel-item{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.carousel-item img{
+    height: 100%;
+    filter: blur(50px);
+    transition: 0.6s;
+}
+
+.carousel-item img:hover{
+    filter: blur(0px);
+}
+*/
+
+.galleryContainer3,
+.galleryContainer6,
+.galleryContainer12,
+.galleryContainer24{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.leftBorder{
+    border-left: 1px solid black;
+}
+
+.galleryContainer3 div{
+    width: 33.3333333%;
+    transition: 0.6s;
+    height: 600px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryContainer6 div{
+    width: 16.6666667%;
+    transition: 0.6s;
+    height: 300px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryContainer12 div{
+    width: 8.33333333%;
+    transition: 0.6s;
+    height: 100px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryContainer24 div{
+    width: 4.16666667%;
+    transition: 0.6s;
+    height: 50px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryContainer3 div img,
+.galleryContainer6 div img,
+.galleryContainer12 div img,
+.galleryContainer24 div img{
+    display: block;
+    width: 100%;
+    filter: blur(50px);
+    transition: 0.6s;
+    margin: auto;
+}
+
+.galleryContainer3 div:hover,
+.galleryContainer6 div:hover,
+.galleryContainer12 div:hover,
+.galleryContainer24 div:hover{
+    width: 100%;
+    z-index: 1;
+}
+
+.galleryContainer3 div:hover img,
+.galleryContainer6 div:hover img,
+.galleryContainer12 div:hover img,
+.galleryContainer24 div:hover img{
+    filter: blur(0px);
+    z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

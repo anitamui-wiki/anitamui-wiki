@@ -9,14 +9,16 @@
     width: 100%;
 }
 
-.mainContainer,
-.filmTitleContainer{
+.mainContainer{
     width: 50%;
+}
+
+.filmTitleContainer{
+    width: 75%;
 }
 
 .extraContainer,
 .filmInfoContainer,
-.emptyContainer,
 .filmYearContainer{
     width: 25%;
 }
@@ -25,7 +27,6 @@
 .extraContainer,
 .filmInfoContainer,
 .filmTitleContainer,
-.emptyContainer,
 .filmYearContainer,
 .filmHeaderContainer{
     position: relative;
@@ -40,7 +41,6 @@
 }
 
 .filmTitleContainer,
-.emptyContainer,
 .filmYearContainer{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -83,9 +83,8 @@
     font-weight: normal;
 }
 
-
 .filmInfoContainer{
-    padding-top:10pt;
+    padding:10pt 0;
     display: flex;
 }
 
@@ -104,8 +103,12 @@
 
 .filmInfo1 div h4{
     margin: 0;
-    padding: 0pt 10pt;  
+    padding: 0 10pt;  
     font-weight: normal;
+}
+
+.filmInfo2 div div{
+    padding: 0 10pt;
 }
 
 @media only screen and (max-width: 600px) {
@@ -123,14 +126,12 @@
     .extraContainer,
     .filmInfoContainer,
     .filmTitleContainer,
-    .emptyContainer,
     .filmYearContainer{
         position: relative;
         top: 79pt;
     }
     
-    .extraContainer,
-    .emptyContainer{
+    .extraContainer{
         display: none;
     }
     

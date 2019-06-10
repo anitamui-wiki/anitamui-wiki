@@ -103,16 +103,15 @@
   width: 15%;
   color: #fff;
   text-align: center;
-  opacity: 0.5;
+    text-decoration: none;
+    transition: 0.6s;
 }
 
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: blue;
   text-decoration: none;
-  outline: 0;
-  opacity: .9;
 }
 
 .carousel-control-prev {
@@ -197,14 +196,16 @@
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
+  bottom: 0px;
+    width: 100%;
+/*  padding-top: 20px;*/
+/*  padding-bottom: 20px;*/
+  color: black;
   text-align: center;
+    background-color: white;
+    opacity: 0.5;
+    border: 1px solid black;
+    border-bottom: 0;
 }
 
 /* Used with carousel */
