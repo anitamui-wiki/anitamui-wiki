@@ -1,5 +1,6 @@
-.filmHeaderContainer h1{
+.musicHeaderContainer h1{
     padding: 10pt;
+/*    padding-bottom: 20pt;*/
     font-size: 48pt;
     margin: 0;
     text-align: center;
@@ -20,14 +21,14 @@
 .albumContainer{
     width: 50%;
     position:relative;
-    top: 90pt;
+    top: 84.5pt;
 }
 
-.filmHeaderContainer{
+.musicHeaderContainer{
     width: 100%;
     display: block;
     position: relative;
-    top: 90pt;
+    top: 84.5pt;
 }
 
 .imageContainer img{
@@ -89,7 +90,7 @@
     .imageContainer,
     .albumContainer{
         width: 100%;
-        top: 73pt;
+        top: 78pt;
     }
     
     .albumContainer{
@@ -102,6 +103,14 @@
     }
     
     .imageContainerSup{
+        display: none;
+    }
+    
+    .imageContainer img{
+        filter: blur(0px);
+    }
+    
+    .musicHeaderContainer{
         display: none;
     }
     

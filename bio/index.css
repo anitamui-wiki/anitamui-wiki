@@ -1,0 +1,188 @@
+.bioContainer{
+    position: relative;
+    top: 45pt;
+}
+
+.bioContentContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.bioHeaderContainer h1{
+    padding: 10pt;
+    font-size: 48pt;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.bioRow1,
+.bioRow2,
+.bioRow3,
+.bioRow4,
+.bioRow5{
+    display: flex;
+    width: 100%;
+}
+
+.bioRow1Image,
+.bioRow2Image,
+.bioRow3Image{
+    width: 66.6666667%;
+    display: flex;
+}
+
+.bioRow1Image div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 750px;
+    transition: 0.6s;
+    border-left: 1px solid black;
+}
+
+.bioRow1Image div img,
+.bioRow2Image div img,
+.bioRow2Image div a video,
+.bioRow2Image div a,
+.bioRow3Image div img,
+.bioRow4Image div img,
+.bioRow4Text div img,
+.bioRow5Image div img{
+    width: 100%;
+    display: block;
+    transition: 0.6s;
+    filter: blur(50px);
+}
+
+.bioRow1Image div:hover,
+.bioRow2Image div:hover,
+.bioRow3Image div:hover,
+.bioRow4Image div:hover,
+.bioRow5Image div:hover{
+    width: 100%;
+}
+
+.bioRow1Image div:hover img,
+.bioRow2Image div:hover img,
+.bioRow2Image div:hover video,
+.bioRow2Image div:hover a,
+.bioRow3Image div:hover img,
+.bioRow4Image div:hover img,
+.bioRow4Text div img:hover,
+.bioRow5Image div:hover img{
+    filter: blur(0px);
+}
+
+.bioRow1Text,
+.bioRow3Text{
+    width: 33.3333333%;
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.bioRow1Text h2,
+.bioRow2Text h2,
+.bioRow3Text h2,
+.bioRow4Text h2,
+.bioRow5Text h2{
+    margin: 0;
+    padding: 10pt;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.bioRow1Text p,
+.bioRow2Text p,
+.bioRow3Text p,
+.bioRow4Text p,
+.bioRow5Text p{
+    margin: 0;
+    padding: 10pt;
+    padding-bottom: 0;
+}
+
+.bioTextBottom{
+    padding-bottom: 10pt !important;
+}
+
+.bioRow2Image div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 750px;
+    transition: 0.6s;
+    border: 1px solid black;
+    border-left: 0;
+}
+
+.bioRow2Text{
+    display: flex;
+    width: 33.3333333%;
+}
+
+.bioRow2Text div{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.bioRow3Image div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.6666667%;
+    height: 950px;
+    transition: 0.6s;
+    border-left: 1px solid black;
+}
+
+.bioRow4Text{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    border-left: 0;
+}
+
+.bioRow4Text div{
+    width: 50%;
+    border-left: 1px solid black;
+}
+
+.bioRow4Text div img{
+    width: 100%;
+}
+
+.bioRow5Text{
+    width: 50%;
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.bioRow5Image{
+    width: 50%;
+    display: flex;
+}
+
+.bioRow5Image div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 1025px;
+    transition: 0.6s;
+    border-left: 1px solid black;
+}
+
+.homeFooterContainer{
+    position: relative;
+    top: 45pt;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

@@ -100,8 +100,8 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 15%;
-  color: #fff;
+  width: 6%;
+  color: black;
   text-align: center;
     text-decoration: none;
     transition: 0.6s;
@@ -110,7 +110,7 @@
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: blue;
+  color: grey;
   text-decoration: none;
 }
 

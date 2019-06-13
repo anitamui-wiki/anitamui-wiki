@@ -28,7 +28,7 @@
 .interviewYearContainer,
 .interviewHeaderContainer{
     position: relative;
-    top: 90pt;
+    top: 84.5pt;
 }
 
 .interviewHeaderContainer h1{
@@ -63,6 +63,9 @@
     width: 100%;
     padding: 5pt 10pt;
     text-align: center;
+}
+
+.bottomBorder{
     border-bottom: 1px solid black;
 }
 

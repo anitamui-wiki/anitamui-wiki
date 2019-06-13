@@ -108,5 +108,26 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .galleryContainer3 div img,
+    .galleryContainer6 div img,
+    .galleryContainer12 div img,
+    .galleryContainer24 div img{
+        filter: blur(0px);
+    }
     
+    .galleryContainer3 div{
+        height: 200px;
+    }
+    
+    .galleryContainer6 div{
+        height: 100px;
+    }
+    
+    .galleryContainer12 div{
+        height: 50px;
+    }
+    
+    .galleryContainer24 div{
+        height: 25px;
+    }
 }
